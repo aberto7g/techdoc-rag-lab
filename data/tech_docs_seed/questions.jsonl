@@ -1,0 +1,7 @@
+{"question_id":"seed-q-1","question":"git rebase 一般是拿来做什么的？","gold_answer":"git rebase 会把一串提交重新放到新的起点之上，常见用途是把当前分支的工作接到更新后的上游分支上，或者整理提交历史，让历史更线性。","gold_doc_ids":["git-1"]}
+{"question_id":"seed-q-2","question":"git revert 和 git restore 的作用有什么区别？","gold_answer":"git revert 会新建一个提交来撤销已有提交带来的改动；git restore 主要用来从索引或其他提交恢复工作区或暂存区里的文件内容。","gold_doc_ids":["git-2"]}
+{"question_id":"seed-q-3","question":"如果我想把一个混在一起的大提交拆成更细的小提交，git reset 可以怎么用？","gold_answer":"可以先用 git reset 回退提交但保留本地文件内容，再配合 git add -p 按块重新挑选内容，重新组织成更细的提交。","gold_doc_ids":["git-3"]}
+{"question_id":"seed-q-4","question":"grep 递归搜索目录通常用哪个选项？","gold_answer":"在 GNU grep 里，递归处理目录通常可以用 -r。","gold_doc_ids":["grep-1"]}
+{"question_id":"seed-q-5","question":"grep 想把匹配结果的行号一起打出来，一般用什么选项？","gold_answer":"grep 的 -n 选项会在输出结果前面加上输入文件中的行号。","gold_doc_ids":["grep-2"]}
+{"question_id":"seed-q-6","question":"grep 如果只想匹配完整单词，应该用什么选项？","gold_answer":"grep 的 -w 选项会只匹配完整单词。","gold_doc_ids":["grep-3"]}
+

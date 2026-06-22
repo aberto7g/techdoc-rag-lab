@@ -14,6 +14,7 @@
 当前版本包含一套可以直接跑通的最小基线：
 
 - 一个中文技术文档 demo 语料
+- 一批根据官方技术文档整理的 seed 样本
 - 一个纯 Python 实现的 BM25 检索器
 - 一个离线抽取式回答基线
 - 回答质量和检索质量评测
@@ -32,10 +33,14 @@
 |   `-- tech_docs_demo/
 |       |-- corpus.jsonl
 |       `-- questions.jsonl
+|   `-- tech_docs_seed/
+|       |-- corpus.jsonl
+|       `-- questions.jsonl
 |-- reports/
 |   |-- failure_analysis_template.md
 |   |-- github_publish_checklist.md
 |   |-- portfolio_roadmap.md
+|   |-- seed_dataset_sources.md
 |   `-- tech_docs_dataset_plan.md
 |-- scripts/
 |   `-- run_experiment.py
@@ -65,6 +70,12 @@
 
 ```bash
 python scripts/run_experiment.py --config configs/tech_docs_experiment.json
+```
+
+### 运行 seed 数据实验
+
+```bash
+python scripts/run_experiment.py --config configs/tech_docs_seed_experiment.json
 ```
 
 ### 运行测试
@@ -99,6 +110,17 @@ artifacts/tech_docs_demo_results.json
   "gold_doc_ids": ["doc-1"]
 }
 ```
+
+## 当前数据集说明
+
+现在仓库里有两套小数据：
+
+- `data/tech_docs_demo/`
+  这一套主要用来保证代码和评测流程可以快速跑通。
+- `data/tech_docs_seed/`
+  这一套是我根据官方技术文档整理的种子样本，内容更接近后面真正要扩的方向。
+
+如果后面继续做，我会优先在 `tech_docs_seed` 这个方向上往外扩，而不是继续往 demo 数据里堆内容。
 
 ## 我现在比较关心的问题
 
