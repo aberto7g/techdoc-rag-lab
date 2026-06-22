@@ -9,7 +9,7 @@ description = "面向中文计算机技术文档的 RAG 评测项目，包含基
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
-  { name = "Albert" }
+  { name = "aberto7g" }
 ]
 
 [tool.setuptools]

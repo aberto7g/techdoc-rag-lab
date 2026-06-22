@@ -1,16 +1,16 @@
 # GitHub 发布检查清单
 
-## 发布前建议检查
+这个文件主要是给我自己发仓库之前过一遍，免得传上去以后才发现细节没收好。
 
-- README 是否已经改成你自己的项目介绍
-- `pyproject.toml` 中作者名是否正确
-- demo 数据里是否有不适合公开的内容
-- 实验命令和测试命令是否还能正常运行
-- `.gitignore` 是否已经忽略了 `artifacts/` 等本地产物
+## 发布前检查
 
-## 建议的首次提交内容
+- README 里的表述是不是已经改成当前版本对应的内容
+- `pyproject.toml` 里的作者信息是不是对的
+- demo 数据里有没有不适合公开的内容
+- 实验命令和测试命令还能不能跑
+- `.gitignore` 有没有忽略 `artifacts/` 这类本地产物
 
-首次上传 GitHub 时，建议至少包含这些内容：
+## 首次提交建议包含的内容
 
 - `README.md`
 - `LICENSE`
@@ -21,9 +21,9 @@
 - `tests/`
 - `reports/`
 
-## Windows 下常用上传命令
+## 常用发布命令
 
-如果你还没初始化仓库，可以在 `D:\RAG` 下执行：
+如果本地还没初始化仓库，可以在 `D:\RAG` 下执行：
 
 ```bash
 git init
@@ -31,25 +31,19 @@ git add .
 git commit -m "init: bootstrap chinese tech-doc rag lab"
 ```
 
-然后在 GitHub 上创建一个空仓库，再执行：
+创建远端仓库后再执行：
 
 ```bash
-git remote add origin <你的仓库地址>
+git remote add origin <repo-url>
 git branch -M main
 git push -u origin main
 ```
 
-## 推荐仓库名称
+## 后面还可以继续补的东西
 
-- `chinese-techdoc-rag-lab`
-- `techdoc-rag-benchmark`
-- `cn-tech-rag-eval`
-
-## 发布后第一批可以继续补的内容
-
-- 项目架构图
+- 项目结构图
 - benchmark 结果表
 - 更多真实技术文档样本
-- 一轮错误分析报告
+- 一轮完整的错误分析报告
 - GitHub Actions CI
 
