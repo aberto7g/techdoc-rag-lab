@@ -1,0 +1,2 @@
+"""Chinese RAG Lab package."""
+

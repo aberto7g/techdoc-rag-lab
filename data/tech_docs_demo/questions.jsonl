@@ -1,0 +1,5 @@
+{"question_id":"q-1","question":"git rebase 通常用来做什么？","gold_answer":"git rebase 可以把当前分支的提交重新应用到另一个基底之上，从而得到更线性的提交历史。它常用于同步主分支的新提交，或在合并前整理本地提交记录。","gold_doc_ids":["doc-1"]}
+{"question_id":"q-2","question":"Python 虚拟环境的主要目的是什么？","gold_answer":"Python 虚拟环境用于为不同项目隔离依赖。","gold_doc_ids":["doc-2"]}
+{"question_id":"q-3","question":"如果我想在目录下递归搜索文本并显示行号，grep 常用哪些选项？","gold_answer":"使用递归搜索时，通常需要结合 -r 或 --recursive 选项在目录下查找匹配内容；使用 -n 可以显示匹配行号。","gold_doc_ids":["doc-3"]}
+{"question_id":"q-4","question":"Docker 数据卷为什么有用？","gold_answer":"Docker 数据卷用于持久化容器数据，并支持在多个容器之间共享数据。即使容器被删除，数据卷中的内容通常仍然保留。","gold_doc_ids":["doc-4"]}
+

@@ -1,0 +1,7 @@
+{
+  "corpus_path": "data/tech_docs_demo/corpus.jsonl",
+  "questions_path": "data/tech_docs_demo/questions.jsonl",
+  "top_k": 3,
+  "output_path": "artifacts/tech_docs_demo_results.json"
+}
+

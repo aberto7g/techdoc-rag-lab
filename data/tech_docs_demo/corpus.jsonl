@@ -1,0 +1,6 @@
+{"doc_id":"doc-1","title":"Git rebase 的作用","text":"git rebase 可以把当前分支的提交重新应用到另一个基底之上，从而得到更线性的提交历史。它常用于同步主分支的新提交，或在合并前整理本地提交记录。","source":"synthetic-tech-doc","domain":"git"}
+{"doc_id":"doc-2","title":"Python 虚拟环境基础","text":"Python 虚拟环境用于为不同项目隔离依赖。常见流程包括创建虚拟环境、激活虚拟环境、安装依赖，以及在项目结束后退出当前环境。","source":"synthetic-tech-doc","domain":"python"}
+{"doc_id":"doc-3","title":"grep 递归搜索","text":"grep 可以用于文本搜索。使用递归搜索时，通常需要结合 -r 或 --recursive 选项在目录下查找匹配内容；使用 -n 可以显示匹配行号。","source":"synthetic-tech-doc","domain":"linux"}
+{"doc_id":"doc-4","title":"Docker 数据卷","text":"Docker 数据卷用于持久化容器数据，并支持在多个容器之间共享数据。即使容器被删除，数据卷中的内容通常仍然保留。","source":"synthetic-tech-doc","domain":"docker"}
+{"doc_id":"doc-5","title":"PyTorch DataLoader 基本作用","text":"PyTorch 中的 DataLoader 用于按批次加载数据，并可以提供打乱顺序、多进程加载和自定义批处理等能力，以便更高效地训练模型。","source":"synthetic-tech-doc","domain":"pytorch"}
+
