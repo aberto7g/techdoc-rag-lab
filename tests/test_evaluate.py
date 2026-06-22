@@ -9,7 +9,7 @@ if str(SRC_PATH) not in sys.path:
     sys.path.insert(0, str(SRC_PATH))
 
 
-from chinese_rag_lab.evaluate import exact_match, retrieval_hit_at_k, token_f1
+from techdoc_rag.evaluate import exact_match, retrieval_hit_at_k, token_f1
 
 
 class EvaluateTests(unittest.TestCase):

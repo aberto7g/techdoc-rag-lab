@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-from chinese_rag_lab.tokenize import simple_tokenize
-from chinese_rag_lab.types import RetrievedDocument
+from techdoc_rag.tokenize import simple_tokenize
+from techdoc_rag.types import RetrievedDocument
 
 
 class ExtractiveGenerator:
@@ -46,4 +46,3 @@ def _split_sentences(text: str) -> list[str]:
         sentences.append(tail)
 
     return sentences
-

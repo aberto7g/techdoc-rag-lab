@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "chinese-rag-lab"
+name = "techdoc-rag"
 version = "0.1.0"
 description = "面向中文计算机技术文档的 RAG 评测项目，包含基线实现、实验运行与失败案例分析。"
 readme = "README.md"

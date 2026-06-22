@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-from chinese_rag_lab.tokenize import normalize_text, simple_tokenize
-from chinese_rag_lab.types import Prediction, Question
+from techdoc_rag.tokenize import normalize_text, simple_tokenize
+from techdoc_rag.types import Prediction, Question
 
 
 def exact_match(prediction: str, gold: str) -> float:
@@ -68,4 +68,3 @@ def evaluate_predictions(predictions: list[Prediction], questions: list[Question
         "count": len(rows),
     }
     return {"summary": summary, "rows": rows}
-

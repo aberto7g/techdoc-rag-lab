@@ -1,8 +1,8 @@
 from __future__ import annotations
 
-from chinese_rag_lab.generator import ExtractiveGenerator
-from chinese_rag_lab.retriever import BM25Retriever
-from chinese_rag_lab.types import Prediction, Question
+from techdoc_rag.generator import ExtractiveGenerator
+from techdoc_rag.retriever import BM25Retriever
+from techdoc_rag.types import Prediction, Question
 
 
 class RAGPipeline:
@@ -22,4 +22,3 @@ class RAGPipeline:
             retrieved_doc_ids=[item.doc.doc_id for item in retrieved],
             top_context=top_context,
         )
-

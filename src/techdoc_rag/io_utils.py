@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from typing import Iterable
 
-from chinese_rag_lab.types import Document, Question
+from techdoc_rag.types import Document, Question
 
 
 def load_jsonl(path: str | Path) -> list[dict]:
@@ -52,4 +52,3 @@ def load_questions(path: str | Path) -> list[Question]:
         )
         for row in load_jsonl(path)
     ]
-

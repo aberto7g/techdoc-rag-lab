@@ -3,8 +3,8 @@ from __future__ import annotations
 import math
 from collections import Counter, defaultdict
 
-from chinese_rag_lab.tokenize import simple_tokenize
-from chinese_rag_lab.types import Document, RetrievedDocument
+from techdoc_rag.tokenize import simple_tokenize
+from techdoc_rag.types import Document, RetrievedDocument
 
 
 class BM25Retriever:
@@ -53,4 +53,3 @@ class BM25Retriever:
             score += idf * (freq * (self.k1 + 1)) / max(denom, 1e-9)
 
         return score
-

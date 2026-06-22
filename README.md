@@ -1,4 +1,4 @@
-# 中文技术文档 RAG 实验室
+# 技术文档 RAG 实验
 
 这个仓库是我在做的一个 RAG 小实验，方向是中文计算机技术文档问答。现在这版先不追求复杂模型，主要把几件基础的事情做扎实：
 
@@ -40,7 +40,7 @@
 |-- scripts/
 |   `-- run_experiment.py
 |-- src/
-|   `-- chinese_rag_lab/
+|   `-- techdoc_rag/
 |       |-- __init__.py
 |       |-- evaluate.py
 |       |-- failure_analysis.py
@@ -131,4 +131,3 @@ artifacts/tech_docs_demo_results.json
 ## 当前版本说明
 
 这一版更像一个可运行的起点，而不是最终系统。代码和文档我都尽量写得直接一点，方便后面继续改，也方便回头看每一轮实验到底改了什么。
-

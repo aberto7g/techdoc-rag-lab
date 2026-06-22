@@ -8,8 +8,8 @@ SRC_PATH = Path(__file__).resolve().parent.parent / "src"
 if str(SRC_PATH) not in sys.path:
     sys.path.insert(0, str(SRC_PATH))
 
-from chinese_rag_lab.retriever import BM25Retriever
-from chinese_rag_lab.types import Document
+from techdoc_rag.retriever import BM25Retriever
+from techdoc_rag.types import Document
 
 
 class RetrieverTests(unittest.TestCase):
