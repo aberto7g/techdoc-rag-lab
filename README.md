@@ -1,79 +1,41 @@
 # 技术文档 RAG 实验
 
-我在这里做一个中文技术文档问答方向的 RAG 实验。
+一个面向中文计算机技术文档问答的 RAG 实验仓库，当前重点是做可复现的基线、评测和失败案例分析。
 
-现在先保留一个比较简单的基线，方便后面继续往上加：
+English: A small RAG lab for Chinese technical documentation QA, focused on reproducible baselines, evaluation, and error analysis.
 
-- BM25 检索
-- 抽取式回答
-- 检索 / 回答评测
-- 失败案例记录
+## Current Scope
 
-## 现在的数据
+- BM25 retrieval baseline
+- extractive answer baseline
+- retrieval and answer evaluation
+- failure case tracking
 
-目前有两套小数据：
+## Data
 
-- `data/tech_docs_demo/`
-  用来快速跑通流程。
-- `data/tech_docs_seed/`
-  用官方技术文档整理的一批 seed 样本，现在主要是 Git 和 grep。
+- `data/tech_docs_demo/`: small demo set for quick runs
+- `data/tech_docs_seed/`: seed set built from official technical docs
 
-## 目录
-
-```text
-.
-|-- configs/
-|-- data/
-|-- reports/
-|-- scripts/
-|-- src/
-|   `-- techdoc_rag/
-|-- tests/
-|-- .gitignore
-|-- LICENSE
-|-- pyproject.toml
-`-- README.md
-```
-
-## 运行
-
-跑 demo：
+## Run
 
 ```bash
 python scripts/run_experiment.py --config configs/tech_docs_experiment.json
-```
-
-跑 seed 数据：
-
-```bash
 python scripts/run_experiment.py --config configs/tech_docs_seed_experiment.json
-```
-
-跑测试：
-
-```bash
 python -m unittest discover -s tests
 ```
 
-结果默认写到 `artifacts/`。
+Artifacts are written to `artifacts/` by default.
 
-## 数据格式
+## Data Format
 
-文档：
+Document:
 
 ```json
 {"doc_id":"doc-1","title":"...","text":"...","source":"...","domain":"..."}
 ```
 
-问答：
+QA sample:
 
 ```json
-{
-  "question_id": "q-1",
-  "question": "...",
-  "gold_answer": "...",
-  "gold_doc_ids": ["doc-1"]
-}
+{"question_id":"q-1","question":"...","gold_answer":"...","gold_doc_ids":["doc-1"]}
 ```
-
-
